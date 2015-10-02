@@ -1,0 +1,38 @@
+<div class="home-top-action">
+	<div class="row">
+		<div class="col-sm-4 col-sm-offset-4">
+			<div class="home-block-general edit-track-wrapper">
+				<h2>EDIT TRACK</h2>
+				<img src="public/images/note.png" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="table-responsive edit-general">
+		<table class="table">
+			<thead class="title">
+				<tr>
+					<th>TITLE</th>
+					<th>LENGTH</th>
+					<th>CREATED AT</th>
+					<th>UPDATED AT</th>
+					<th align="center" colspan="3">ACTION</th>
+				</tr>
+			</thead>
+			<tbody ng-repeat="album in albums">
+			<tr>
+			    <td colspan="7" class="albums" style="text-align:center;"><h2>{{album.title}}</h2></td>
+			</tr>
+				<tr id="js-track-{{track.id}}" class="tracks" ng-repeat="track in album.tracks">
+					<td valign="baseline">{{track.title}}</td>
+					<td valign="baseline">{{track.length | trackLengthConverter}}</td>
+					<td valign="baseline">{{track.created_at | dateTimeConverter}}</td>
+					<td valign="baseline">{{track.updated_at | dateTimeConverter}}</td>
+					<td valign="baseline"><a href="" ng-click="editThisTrack(track)" class="btn btn-primary">Edit</a></td>
+					<td valign="baseline"><a href="" ng-click="confirmDelete(track)" class="btn btn-danger">Delete</a></td>
+					<td valign="baseline"><a href="" ui-sref="home.edit-track.single({stuff:track})" class="btn btn-success">View</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<!-- ui-sref="home.edit-track.single({stuff:track})" -->

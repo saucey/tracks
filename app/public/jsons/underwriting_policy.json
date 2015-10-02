@@ -1,0 +1,73 @@
+
+{
+	"policy": [
+    {
+      "id": 4
+    }
+  ],
+  "provider": [
+    {
+      "id": 4568
+    }
+  ],
+  "financial_product": [
+    {
+     "id" : 5
+	}
+  ],
+  "credit_score": [
+    {
+     "value" : 850
+    }
+  ],
+  "credit_score": [
+    {
+     "value" : 850
+    }
+  ],
+  "preference": [
+    {
+     "value" : 75
+    }
+  ],
+  "home_owner": [
+    {
+     "value" : 1
+    }
+  ],
+  "gdc_member": [
+    {
+     "value" : 1
+    }
+  ],
+  "gdc_member_length": [
+    {
+     "value" : 2
+    }
+  ],
+  "ccj_accepted": [
+    {
+     "value" : 1
+    }
+  ],
+  "ccj_max_value": [
+    {
+     "value" : 1000.00
+    }
+  ],
+  "payments_missed_accepted": [
+    {
+     "value" : 1
+    }
+  ],
+  "payments_missed_max_number": [
+    {
+     "value" : 3
+    }
+  ],
+  "payments_missed_previous_months": [
+    {
+     "value" : 12
+    }
+  ]
+}

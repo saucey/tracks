@@ -1,0 +1,30 @@
+<div class="home-top-action">
+	<div class="row">
+		<div class="col-sm-4 col-sm-offset-4">
+			<div class="home-block-general form-el">
+				<h2>CREATE TRACK</h2>
+				<img src="public/images/note.png" alt="">
+				<form class="row" id="createTrackForm" name="createTrackForm" ng-submit="createTrackSubmit(create_track)" ng-model="create_track" novalidate>
+					<li>
+						<label class="control-label" for="">Select album:</label>
+						<select class="form-control" name="album" required ng-class="{errorbox: createTrackForm.album.$invalid && createTrackForm.album.$dirty}"
+							ng-model="create_track.data" ng-options="create_track.title for create_track in albums track by create_track.id">
+						</select>
+					</li>
+					<li>
+						<label class="control-label" for="formGroupInputLarge">Title:</label>
+						<input class="form-control" ng-model="create_track.title" type="text" name="title" ng-class="{errorbox: createTrackForm.title.$invalid && createTrackForm.title.$dirty }" required>
+					</li>
+					<li>
+						<label class="control-label" for="formGroupInputLarge">Track Lenth in sec:</label>
+						<input class="form-control" ng-model="create_track.length" type="number" name="length" ng-class="{errorbox: createTrackForm.length.$invalid && createTrackForm.length.$dirty }" required>
+					</li>
+					<li>
+						<input type="submit" value="CREATE TRACK" class="btn btn-primary" ng-disabled="!createTrackForm.$valid">
+					</li>
+					<span ng-if="success" class="box bg-success">{{success}}</span>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

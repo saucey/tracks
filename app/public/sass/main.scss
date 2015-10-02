@@ -1,0 +1,307 @@
+	@import "../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap.scss";
+
+$icon-font-path: "../../../../bower_components/bootstrap-sass/assets/fonts/bootstrap/" !default;
+@import "../../../bower_components/font-awesome/scss/font-awesome.scss";
+
+$bg-color: #fff;
+
+h1 {
+	font-weight: 100;
+}
+
+p {
+	strong {
+
+	}
+}
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	background-image: url(../images/musicbackground.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	position: relative;
+	margin-bottom: 60px;
+}
+
+.errorbox {
+	border: 1px solid red;
+}
+
+.breadcrumb {
+	border-radius: 0!important;
+	background-color: rgba(255,255,255,.5)!important;
+	color: white!important;
+	font-weight: bold!important;
+	a {
+		color: #000;
+
+		&:not(:last-child):after {
+			content:  "\f054";
+			font-family: FontAwesome;
+			display: inline-block;
+		    margin-left: 20px;
+		}
+	}
+}
+
+.track-player {
+	text-align: center;
+	margin-top: 20px;
+	border-top: 1px solid white;
+	padding-top: 10px;
+	.counting {
+		font-size: 1.6em;
+		letter-spacing: 5px;
+	}
+	span {
+		display: inline-block;
+		margin-right: 10px;
+		cursor:pointer;
+		&.fa-pause {
+			color: grey;
+		}
+
+		&.fa-stop {
+			color: red;
+		}
+	}
+}
+
+.single-track-wrapper {
+	background-color: rgba(12,14,16,.53);
+	padding: 20px;
+}
+
+.bg-success {
+	padding: 10px;
+	display: block;
+	margin-top: 10px;
+	text-align: center;
+	color: #2C962A;
+}
+
+.progress-bar {
+	height: 20px;
+	background:red;
+	width:0;
+	text-align:center;
+}
+
+.edit-general {
+	.edit-album {
+		background-color: rgba(255,255,255,.5)!important;
+		padding: 20px 0;
+		td {
+			h2 {
+				margin: 20px 0;
+				padding: 20px 0;
+				margin: 0;
+				font-weight: 200;
+				color: #000;
+			}
+			a {
+				margin: 20px 0;
+			}
+		}
+	}
+
+	.btn {
+		border-radius: 0;
+	}
+	.albums {
+		background-color: rgba(255, 255, 255, 0.5);
+	    color: black;
+	    h2 {
+		    font-weight: 200;
+		    margin: 20px 0;
+	    }
+
+	}
+	.tracks {
+		background-color: rgba(0,0,0,0.75);
+	}
+
+	.title {
+		background-color: rgba(204, 55, 42, 0.55);
+		th {
+			font-weight: 200;
+		}
+	}
+}
+
+.btn-primary[disabled] {
+	// background-color: red!important;
+	&:hover {
+		background-color: none!important;
+	}
+}
+.modal-content {
+	border-radius: 0!important;
+	.general-modal-wrapper {
+		padding: 20px;
+		&.edit {
+			label {
+				margin-top: 10px;
+			}
+
+			.btn {
+				margin-top: 10px;
+			}
+		}
+		.btn {
+			border-radius: 0!important;
+		}
+	}
+}
+
+.navbar-default {
+
+	.navbar-toggle {
+		background-color: rgb(80, 74, 74);
+		border-radius: 0;
+		border-color: #F00!important;
+		.icon-bar {
+			background-color: #F00;
+		}
+	}
+	background-color: rgba(255,255,255,0.5);
+	border: none;
+	border-radius: 0;
+	.dropdown-menu {
+		background-color: rgba(255, 14, 9, 0.5);
+		padding: 0;
+		.divider {
+			margin: 0;
+		}
+		a {
+			padding: 10px;
+			&:hover {
+				background-color: rgba(12,14,16,.53);
+			}
+		}
+	}
+	.navbar-nav {
+		li > {
+			a {
+				&.fa-home {
+					&:hover, &:focus {
+						color: red;
+					}
+				}
+				color: white;
+			}
+		}
+	}
+}
+
+.home-top-action {
+	&.single-track-list {
+		.single-track-wrapper {
+			text-align: left;
+
+			.row {
+				margin-bottom: 20px;
+				.data {
+					font-size: 1em;
+					letter-spacing: 5px;
+				}
+			}
+		}
+	}
+	color: white;
+	margin-top: 40px;
+	.row {
+		margin-bottom: 60px;
+	}
+}
+
+.home-block-general {
+	text-align: center;
+	&.edit-track-wrapper {
+		.track {
+			border: 1px solid red;
+		}
+	}
+	&.form-el {
+		form {
+			background-color: rgba(12, 14, 16, 0.53);
+			padding: 20px;
+			li {
+				margin-bottom: 20px;
+				list-style-type: none;
+				text-align: left!important;
+				label {
+					font-weight: 200;
+					font-size: 1.2em;
+				}
+			}
+		}
+	}
+
+	.btn {
+		background-color: #fff;
+		border-color: white;
+		color: #798A98;
+		font-weight: bold;
+		border-radius: 0;
+		display: inline-block;
+	}
+	h2 {
+		font-weight: 100;
+		letter-spacing: 10px;
+		border-bottom: 1px solid white;
+		margin-bottom: 20px;
+		padding-bottom: 5px;
+	}
+	img {
+		width: 75px;
+		display: block;
+		margin: 0 auto 20px auto;
+	}
+}
+
+.list-all-wrapper {
+    background-color: rgba(12,14,16,.53);
+    h2 {
+    	margin-bottom: 40px;
+    }
+	.list-all-tracks {
+		margin-bottom: 40px;
+	}
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #f5f5f5;
+}
+
+
+
+
+
+
+#progressBar {
+  width: 923px;
+  margin: 10px auto;
+  height: 22px;
+  background-color: #0A5F44;
+}
+
+#progressBar div {
+  height: 100%;
+  text-align: right;
+  // padding: 0 10px;
+  line-height: 22px; /* same as #progressBar height if we want text middle aligned */
+  width: 0;
+  background-color: #CBEA00;
+  box-sizing: border-box;
+}
+

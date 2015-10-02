@@ -1,0 +1,27 @@
+<div class="home-top-action">
+	<div class="row">
+		<div class="col-sm-4 col-sm-offset-4">
+			<div class="home-block-general edit-album-wrapper">
+				<h2>EDIT ALBUM</h2>
+				<img src="public/images/note.png" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="table-responsive edit-general">
+		<table class="table">
+			<thead class="title">
+				<tr>
+					<th>TITLE</th>
+					<th align="center" colspan="4">ACTION</th>
+				</tr>
+			</thead>
+			<tbody ng-repeat="album in albums">
+				<tr id="js-album-{{album.id}}" class="edit-album">
+				    <td><h2>{{album.title}}</h2></td>
+				    <td><a href="" ng-click="editThisAlbum(album)" class="btn btn-success">Edit</a></td>
+				    <td><a href="" ng-click="confirmDelete(album)" class="btn btn-danger">Delete</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

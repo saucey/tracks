@@ -1,0 +1,13 @@
+<div class="general-modal-wrapper edit">
+	<h1>Edit Album</h1>
+	<p>Please edit album details here below:</p>
+	<form name="editAlbumForm" ng-submit="editAlbumSubmitted(album, editAlbumForm)" ng-model="album" novalidate>
+		<input type="text" class="form-control" ng-model="album.title" ng-class="{errorbox: editAlbumForm.title.$invalid}" name="title"required>
+		<input type="submit" value="Save" class="general-btn btn btn-success" ng-disabled="!editAlbumForm.$valid">
+		<div class="error-message-wrap">
+			<span ng-if="editAlbumForm.title.$error.general" class="box bg-danger">{{editAlbumForm.title.$error.general}}</span>
+			<span ng-if="success" class="box bg-success">{{success}}</span>
+		</div>
+		<br>
+	</form>
+</div>

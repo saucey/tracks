@@ -1,0 +1,18 @@
+<div class="general-modal-wrapper edit">
+	<h1>Edit Track</h1>
+	<p>Please edit track details here below:</p>
+	<form name="editTrackForm" ng-submit="editTrackSubmitted(track, editTrackForm)" ng-model="track" novalidate>
+		<label for="title">Title:</label>
+		<input id="title" type="text" class="form-control" ng-model="track.title" ng-class="{errorbox: editTrackForm.title.$invalid}" name="title" required>
+
+		<label for="length">Length:</label>
+		<input id="length" type="text" class="form-control" ng-model="track.length" ng-class="{errorbox: editTrackForm.length.$invalid}" name="length" required>
+
+		<input type="submit" value="Save" class="general-btn btn btn-success" ng-disabled="!editTrackForm.$valid">
+		<div class="error-message-wrap">
+			<span ng-if="editTrackForm.title.$error.general" class="box bg-danger">{{editTrackForm.title.$error.general}}</span>
+			<span ng-if="success" class="box bg-success">{{success}}</span>
+		</div>
+		<br>
+	</form>
+</div>

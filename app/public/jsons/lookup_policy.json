@@ -1,0 +1,88 @@
+
+{
+	"policy": [
+    {
+      "id": 1,
+	  "name": "Tier 1 Conister"
+    },
+	{
+      "id": 2,
+	  "name": "Tier 2 Conister"
+    },
+	{
+      "id": 30,
+	  "name": "Tier 1 Shawbrook"
+    },
+	{
+      "id": 4,
+	  "name": "Tier 2 Shawbrook"
+    }
+ ],
+  "provider": [
+    {
+      "id": 4568,
+      "name": "Conister"
+    },
+    {
+      "id": 7895,
+      "name": "Shawbrook"
+    },
+    {
+      "id": 7855,
+      "name": "Hitachi"
+    }
+  ],
+  "provider_financial_products": [
+    {
+     "id" : 4568,
+	 "finacial_product":  [
+			{
+			  "id": 5,
+			  "name": "Hire Purchase 1",
+			  "ratecard_id": 12,
+			  "rate_name": "Tier 1"
+			},
+			{
+			  "id": 7,
+			  "name": "Lease Purchase 1",
+			  "ratecard_id": 14,
+			  "rate_name": "Tier 1"
+			}
+		]
+    },
+	{
+    "id" : 7895,
+	 "finacial_product": [
+			{
+			  "id": 8,
+			  "name": "Hire Purchase 2",
+			  "ratecard_id": 15,
+			  "rate_name": "Tier 2"
+			},
+			{
+			  "id": 9,
+			  "name": "Lease Purchase 2",
+			  "ratecard_id": 16,
+			  "rate_name": "Tier 2"
+			}
+		]
+    },
+	{
+	"id" : 7855,
+	 "finacial_product":  [
+			{
+			  "id": 10,
+			  "name": "Hire Purchase 3",
+			  "ratecard_id": "17",
+			  "rate_name": "Tier 3"
+			},
+			{
+			  "id": 11,
+			  "name": "Lease Purchase 3",
+			  "ratecard_id": 18,
+			  "rate_name": "Tier 3"
+			}
+		]
+    }
+  ]
+}

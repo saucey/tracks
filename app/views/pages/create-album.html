@@ -1,0 +1,20 @@
+<div class="home-top-action">
+	<div class="row">
+		<div class="col-sm-4 col-sm-offset-4">
+			<div class="home-block-general form-el">
+				<h2>CREATE ALBUM</h2>
+				<img src="public/images/cd-single.png" alt="">
+				<form class="row" id="createAlbumForm" name="createAlbumForm" ng-submit="createAlbumSubmit(create_album)" ng-model="create_album" novalidate>
+					<li>
+						<label class="control-label" for="formGroupInputLarge">Title:</label>
+						<input class="form-control" ng-model="create_album.title" type="text" name="title" ng-class="{errorbox: createAlbumForm.title.$invalid && createAlbumForm.title.$dirty }" required>
+					</li>
+					<li>
+						<input type="submit" value="CREATE ALBUM" class="btn btn-primary" ng-disabled="!createAlbumForm.$valid">
+					</li>
+					<span ng-if="success" class="box bg-success">{{success}}</span>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

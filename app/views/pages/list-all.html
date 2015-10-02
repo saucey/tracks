@@ -1,0 +1,59 @@
+<div class="home-top-action">
+	<div class="row">
+		<div class="col-sm-4 col-sm-offset-4">
+			<div class="home-block-general">
+				<h2>LIST ALL</h2>
+				<img src="public/images/cd-bulk.png" alt="">
+			</div>
+		</div>
+	</div>
+<!-- 	<div id="progressBar">
+	  <div></div>
+	</div>
+ -->
+	<div class="row list-all-wrapper" ng-repeat="album in albums">
+		<div class="col-sm-12">
+			<h2>{{album.title}}</h2>
+		</div>
+		<div class="list-all-tracks clear" ng-repeat="track in album.tracks">
+			<div class="col-sm-7">
+				<div class="row">
+					<div class="col-sm-3">
+						<span>Title:</span>
+					</div>
+					<div class="col-sm-9">
+						<span>{{track.title}}</span>
+					</div>
+					<div class="col-sm-3">
+						<span>Length:</span>
+					</div>
+					<div class="col-sm-9">
+						<span>{{track.length | trackLengthConverter}}</span>
+					</div>
+					<div class="col-sm-3">
+						<span>Created at:</span>
+					</div>
+					<div class="col-sm-9">
+						<span>{{track.created_at | dateTimeConverter}}</span>
+					</div>
+					<div class="col-sm-3">
+						<span>Updated at:</span>
+					</div>
+					<div class="col-sm-9">
+						<span>{{track.updated_at | dateTimeConverter}}</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-5">
+				<div class="track-player">
+					<p class="counting" ng-bind="counter | trackLengthConverter"></p>
+					<span class="fa-2x fa-play fa" ng-click="play()"></span>
+					<span class="fa-2x fa-pause fa" ng-click="pause()"></span>
+					<span class="fa-2x fa-stop fa" ng-click="stop()"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+

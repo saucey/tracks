@@ -1,0 +1,52 @@
+<div class="home-top-action single-track-list">
+	<div class="row">
+		<div class="col-sm-4 col-sm-offset-4">
+			<div class="home-block-general form-el">
+				<h2>SINGLE TRACK</h2>
+				<img src="public/images/note.png" alt="">
+				<div class="single-track-wrapper">
+					<div class="single-track">
+						<div class="row">
+							<div class="col-sm-6">
+								Track Title:
+							</div>
+							<div class="col-sm-6">
+								<span class="data">{{track.title}}</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6">
+								Track Created:
+							</div>
+							<div class="col-sm-6">
+								<span class="data">{{track.create_at | dateTimeConverter}}</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6">
+								Track Updated:
+							</div>
+							<div class="col-sm-6">
+								<span class="data">{{track.updated_at | dateTimeConverter}}</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6">
+								Track Length:
+							</div>
+							<div class="col-sm-6">
+								<span class="data">{{track.length | trackLengthConverter}}</span>
+							</div>
+						</div>
+					</div>
+					<div class="track-player">
+						<p class="counting" ng-bind="counter | trackLengthConverter"></p>
+						<span class="fa-2x fa-play fa" ng-click="play()"></span>
+						<span class="fa-2x fa-pause fa" ng-click="pause()"></span>
+						<span class="fa-2x fa-stop fa" ng-click="stop()"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

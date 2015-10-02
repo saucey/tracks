@@ -1,0 +1,10 @@
+<div class="general-modal-wrapper">
+	<h1>Delete Album</h1>
+	<p>{{album.title}}</p>
+	<button class="btn btn-danger" ng-click="confirmDelete(album)">Confirm</button>
+	<button class="btn btn-primary" ng-click="cancelDelete()">Cancel</button>
+	<div class="error-message-wrap">
+		<span ng-if="success" class="box bg-success">{{success}}</span>
+	</div>
+
+</div>

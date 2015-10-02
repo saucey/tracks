@@ -1,0 +1,10 @@
+<div class="general-modal-wrapper">
+	<h1>Delete Track</h1>
+	<p>{{track.title}}</p>
+	<button class="btn btn-danger" ng-click="confirmDelete(track)">Confirm</button>
+	<button class="btn btn-primary" ng-click="cancelDelete()">Cancel</button>
+	<div class="error-message-wrap">
+		<span ng-if="success" class="box bg-success">{{success}}</span>
+	</div>
+
+</div>
